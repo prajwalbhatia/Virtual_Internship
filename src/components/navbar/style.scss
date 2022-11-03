@@ -1,0 +1,37 @@
+.navbar {
+  position: absolute;
+  left: 0;
+  width: var(--navigation-width);
+  height: 100vh;
+  background: #fff;
+  padding: 1.5rem;
+
+  .navigation-container {
+    margin-top: 4rem;
+
+    .nav-item {
+      width: 100%;
+      padding: 1.3rem 0 1.2rem 1.5rem;
+      cursor: pointer;
+
+      .right-part
+      {
+        padding-right: 1.3rem;
+      }
+
+      .nav-text
+      {
+        margin-left: 1.4rem;
+        font-weight: 400;
+        font-size: 1.5rem;
+      }
+    }
+    
+    .nav-item:hover
+    {
+      background-color: rgb(94, 173, 168 , 0.16);
+      border-radius: 0.6rem;
+      color: #5EADA8;
+    }
+  }
+}
