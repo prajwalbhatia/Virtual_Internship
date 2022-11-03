@@ -3,6 +3,11 @@ export interface NavbarProps {
   itemClicked : Function
 }
 
+export interface HeaderProp {
+    searchText : Function,
+    showSearch : boolean
+}
+
 export interface Item {
   id: number,
   icon: any,

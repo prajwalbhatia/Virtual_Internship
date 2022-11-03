@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.scss';
 import Navbar from './components/navbar/navbar';
+import Header from './components/header/header';
 
 //ASSETS
 import Home from "./assets/home.svg";
@@ -57,6 +58,13 @@ function App() {
         itemClicked={(item : Item) => {
           console.log(item)
         }}
+      />
+
+      <Header
+        searchText={(val : string) => {
+          console.log(val)
+        }}
+        showSearch={true}
       />
       <div className="App">
 
