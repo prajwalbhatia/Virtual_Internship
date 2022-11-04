@@ -1,6 +1,7 @@
 :root {
   --navigation-width: 26rem;
-  --navigation-padding: 1.5rem
+  --navigation-padding: 1.5rem;
+  --primaryColor: #5EADA8;
 }
 
 * {
@@ -32,6 +33,14 @@ body {
 //COMMON
 .d-flex {
   display: flex;
+}
+
+.m-l-1 {
+  margin-left: 1rem;
+}
+
+.width-100 {
+  width: 100%;
 }
 
 .d-flex-space-btw {

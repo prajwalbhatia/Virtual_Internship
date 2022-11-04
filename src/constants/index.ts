@@ -1,11 +1,16 @@
 export interface NavbarProps {
   items: Item[];
-  itemClicked : Function
+  itemClicked: Function
 }
 
 export interface HeaderProp {
-    searchText : Function,
-    showSearch : boolean
+  searchText: Function,
+  showSearch: boolean
+}
+
+export interface PostsProp {
+  postText: Function,
+  btnAction : Function
 }
 
 export interface Item {
@@ -16,7 +21,14 @@ export interface Item {
 }
 
 export interface Children {
-  id : number,
-  title : string,
-  parentId : number
+  id: number,
+  title: string,
+  parentId: number
+}
+
+export const ICONS = {
+  addIcon: 'add-icon',
+  videoIcon : 'video-icon',
+  micIcon : 'mic-icon',
+  post : 'post'
 }

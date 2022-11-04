@@ -1,0 +1,23 @@
+.button-container {
+  width: 100%;
+  position: relative;
+
+  .btn {
+    width: fit-content;
+    font-family: RobotoMedium;
+    border: none;
+    border-radius: .6rem;
+    cursor: pointer;
+    width: 100%;
+    padding: .5em 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+  .primary-btn {
+    color: white;
+    background-color: var(--primaryColor);
+  }
+}

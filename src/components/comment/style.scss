@@ -1,0 +1,98 @@
+.comment {
+  height: auto;
+  width: 100%;
+  background: #ffffff;
+  border-radius: 0.8rem;
+  display: flex;
+  width: 100%;
+
+  .comment-inner {
+    width: 100%;
+
+    .post-user-detail-container {
+      display: flex;
+
+      .profile-container {
+        height: 4.3rem;
+        width: 4.6rem;
+        border-radius: 50%;
+        background: #C3C4FF;
+      }
+
+      .top {
+        display: flex;
+        align-items: center;
+      }
+
+      .user-info-container {
+        margin-left: 1rem;
+        background: #F6F6F6;
+        padding: 1rem;
+        width: 100%;
+        justify-content: space-between;
+
+        .username {
+          font-size: 1.4rem;
+          color: #4A4A4A;
+          margin-right: 1rem;
+          margin-left: 1rem;
+        }
+
+        .dot {
+          width: 0.5rem;
+          height: 0.5rem;
+          border-radius: 50%;
+          background: #566A7F;
+          margin-right: 1rem;
+        }
+
+        .desigination {
+          font-size: 1.4rem;
+          color: #566A7F;
+        }
+      }
+    }
+
+    .post-text-container {
+      font-size: 1.4rem;
+      color: #A1ACB8;
+      margin-top: 1rem;
+    }
+
+    .post-reaction-container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: 1rem;
+
+      .chat-icon-container {
+        span {
+          margin-left: 0.4rem;
+        }
+      }
+
+      .reactions {
+        display: flex;
+      }
+
+      .reaction {
+        width: auto;
+        padding: 0.5rem 1rem;
+        background: #fbf1f1;
+        border-radius: 1.2rem;
+        margin-right: 1rem;
+      }
+    }
+
+    .horizontal {
+      width: 100%;
+      height: 0.1rem;
+      background: #EAEEF2;
+      margin-top: 1rem;
+    }
+
+    .thoughts-container {
+      margin-top: 2rem;
+    }
+  }
+}

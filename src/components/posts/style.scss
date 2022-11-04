@@ -1,0 +1,68 @@
+.posts {
+  height: auto;
+  width: 100%;
+  // margin: 10px;
+  background: #ffffff;
+  border-radius: 0.8rem;
+  display: flex;
+
+  .post-inner {
+    width: 100%;
+  }
+
+  .dp-container {
+    .profile-container {
+      height: 4.3rem;
+      width: 4.6rem;
+      border-radius: 50%;
+      background: #C3C4FF;
+    }
+  }
+
+  .post-input-container {
+    border: 1px solid #ECEEF1;
+    padding: 1rem;
+    margin-left: 1.6rem;
+    border-radius: 8px;
+    width: 100%;
+
+    .text-area {
+      textarea {
+        border: 0;
+        outline: 0;
+        background: transparent;
+        width: 100%;
+      }
+    }
+
+    .action-btn-area {
+      margin-top: 1rem;
+      display: flex;
+      justify-content: space-between;
+
+      .left-part {
+        display: flex;
+        align-items: center;
+
+        .add-icon-container {
+          width: 3rem;
+          height: 3rem;
+          border-radius: 50%;
+          background-color: #ECEEF1;
+        }
+
+        .horizontal {
+          background: #ECEEF1;
+          height: 3rem;
+          width: 0.2rem;
+          border-radius: 0.1rem;
+        }
+
+        .post-icons {
+          margin-right: 1rem;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}

@@ -2,6 +2,7 @@ import React from 'react';
 import './App.scss';
 import Navbar from './components/navbar/navbar';
 import Header from './components/header/header';
+import Posts from './components/posts/posts';
 
 //ASSETS
 import Home from "./assets/home.svg";
@@ -9,11 +10,12 @@ import BookOpen from "./assets/book-open.svg";
 import Hand from "./assets/hand-first.svg";
 import Briefcase from './assets/briefcase.svg';
 import { Item } from './constants';
+import UserPost from './components/userPost/userPost';
 
 function App() {
   return (
     <>
-      <Navbar
+      {/* <Navbar
         items={[
           {
             id: 1,
@@ -65,6 +67,18 @@ function App() {
           console.log(val)
         }}
         showSearch={true}
+      /> */}
+
+      {/* <Posts
+        postText={() => {
+
+        }}
+        btnAction={() => {
+
+        }}
+      /> */}
+
+      <UserPost
       />
       <div className="App">
 
