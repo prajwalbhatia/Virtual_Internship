@@ -76,6 +76,8 @@ function App() {
         btnAction={() => {
 
         }}
+                    type="post"
+
       /> */}
 
       <UserPost

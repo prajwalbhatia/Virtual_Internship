@@ -17,9 +17,10 @@ import Mic from "../../assets/mic.svg";
 import At from "../../assets/at.svg";
 
 import { PrimaryButton } from "../button/button";
-
-function Posts({ postText, btnAction }: PostsProp) {
+//type - thoughts or post
+function Posts({ postText, btnAction, type }: PostsProp) {
   const [postTextVal, setPostTextVal] = useState('');
+  const [textAreaFocus, setTextAreaFocus] = useState(true);
 
   const handlePostText = (e: any) => {
     setPostTextVal(e.target.value);
@@ -41,13 +42,16 @@ function Posts({ postText, btnAction }: PostsProp) {
         <div className='post-input-container'>
           <div className='text-area'>
             <textarea
-              rows={4} cols={50}
+              rows={textAreaFocus ? 4 : 1}
+              cols={50}
               onChange={handlePostText}
-              placeholder='What’s on your mind?'
+              placeholder={type === 'thoughts' ? 'Share your thoughts...' : 'What’s on your mind?'}
               value={postTextVal}
+              onFocus={() => { setTextAreaFocus(true) }}
+              onBlur={() => { setTextAreaFocus(false) }}
             />
           </div>
-          <div className='action-btn-area'>
+          <div className={textAreaFocus ? 'action-btn-area' : 'action-btn-area d-none'}>
             <div className='left-part'>
               <div
                 onClick={() => buttonAction(ICONS.addIcon)}

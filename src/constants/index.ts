@@ -11,6 +11,7 @@ export interface HeaderProp {
 export interface PostsProp {
   postText: Function,
   btnAction : Function
+  type : string
 }
 
 export interface Item {

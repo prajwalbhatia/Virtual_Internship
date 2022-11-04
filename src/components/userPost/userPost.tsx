@@ -88,6 +88,7 @@ function UserPost() {
             btnAction={() => {
 
             }}
+            type="thoughts"
           />
         </div>
 
