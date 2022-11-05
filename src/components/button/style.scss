@@ -15,9 +15,26 @@
     align-items: center;
   }
 
-
   .primary-btn {
     color: white;
     background-color: var(--primaryColor);
+  }
+
+   .primary-btn:hover {
+     background-color: #fff;
+     color: var(--primaryColor);
+     border: .1rem solid var(--primaryColor);
+     box-shadow: 0rem .3rem .6rem var(--boxShadow);
+   }
+
+
+  .outline-primary-btn {
+    border: .1rem solid var(--primaryColor);
+    background: #FFFFFF;
+    color: var(--primaryColor);
+  }
+
+  .outline-primary-btn:hover {
+    box-shadow: 0rem .3rem .6rem var(--boxShadow)
   }
 }
