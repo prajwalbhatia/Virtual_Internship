@@ -1,8 +1,8 @@
 .header {
   position: absolute;
   left: calc(var(--navigation-width) + 2 * var(--navigation-padding));
-  margin-left: 2.6rem;
-  height: 6.2rem;
+  // margin-left: 2.6rem;
+  height: var(--header-height);
   width: calc(100% - var(--navigation-width) - 2 * var(--navigation-padding) - 5.2rem);
   background: #FFFFFF;
   margin-top: 1.2rem;

@@ -5,9 +5,10 @@
   background: #ffffff;
   border-radius: 0.8rem;
   display: flex;
-
+  // padding: 2rem;
   .post-inner {
     width: 100%;
+    // margin: 2rem;
   }
 
   .dp-container {
@@ -49,13 +50,6 @@
           height: 3rem;
           border-radius: 50%;
           background-color: #ECEEF1;
-        }
-
-        .horizontal {
-          background: #ECEEF1;
-          height: 3rem;
-          width: 0.2rem;
-          border-radius: 0.1rem;
         }
 
         .post-icons {
