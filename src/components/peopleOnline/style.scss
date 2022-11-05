@@ -9,11 +9,9 @@
 
   .people-online-inner {
     width: 100%;
-    // margin: 2rem;
 
     .post-user-detail-container {
       display: flex;
-      // padding: 2rem;
 
       .profile-container {
         height: 4.3rem;
@@ -70,6 +68,7 @@
         align-items: center;
         justify-content: center;
         width: 3rem;
+        height: 3rem;
       }
     }
 

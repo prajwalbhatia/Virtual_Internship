@@ -94,11 +94,10 @@ function UserPost() {
 
         <div className='comments-container'>
           <Comment/>
+
+          <Comment />
+
         </div>
-
-
-
-
       </div>
     </div>
   )

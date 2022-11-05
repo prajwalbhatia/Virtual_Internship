@@ -1,5 +1,8 @@
 .user-post {
-  height: auto;
+  // height: auto;
+  height: calc(100vh - (var(--header-height) + (2 * 1.2rem)) - 1.2rem - 22rem);
+  overflow: scroll;
+
   width: 100%;
   // margin: 10px;
   background: #ffffff;
@@ -9,7 +12,7 @@
 
   .user-post-inner {
     width: 100%;
-    margin: 2rem;
+    padding: 2rem;
 
     .post-user-detail-container {
       display: flex;

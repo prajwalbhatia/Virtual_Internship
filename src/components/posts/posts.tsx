@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState , useEffect } from 'react';
 
 import { PostsProp, ICONS } from '../../constants';
 
@@ -8,7 +8,6 @@ import './style.scss';
 
 //ASSETS
 import Profile from "../../assets/profile.svg";
-import Search from "../../assets/search.svg";
 import Add from "../../assets/add.svg";
 import Smiley from "../../assets/smiley.svg";
 import Font from "../../assets/font.svg";
@@ -20,7 +19,7 @@ import { PrimaryButton } from "../button/button";
 //type - thoughts or post
 function Posts({ postText, btnAction, type }: PostsProp) {
   const [postTextVal, setPostTextVal] = useState('');
-  const [textAreaFocus, setTextAreaFocus] = useState(true);
+  const [textAreaFocus, setTextAreaFocus] = useState(false);
 
   const handlePostText = (e: any) => {
     setPostTextVal(e.target.value);
@@ -31,8 +30,19 @@ function Posts({ postText, btnAction, type }: PostsProp) {
     btnAction(btnName)
   }
 
+  useEffect(() => {
+      if(type === 'post')
+      {
+        setTextAreaFocus(true);
+      }
+  }, [])
+  
+
   return (
-    <div className='posts'>
+    <div
+      className='posts'
+      style={type === 'post' ? { padding: '2rem' } : {}}
+    >
       <div className='d-flex post-inner'>
         <div className='dp-container'>
           <div className='d-flex-c profile-container'>
@@ -59,7 +69,7 @@ function Posts({ postText, btnAction, type }: PostsProp) {
               >
                 <img className='' src={Add} alt="add-icon" />
               </div>
-              <div className='horizontal post-icons'></div>
+              <div className='vertical post-icons'></div>
               <img
                 className='post-icons'
                 src={Video}
@@ -72,7 +82,7 @@ function Posts({ postText, btnAction, type }: PostsProp) {
                 onClick={() => buttonAction(ICONS.micIcon)}
                 alt="mic-icon"
               />
-              <div className='horizontal post-icons'></div>
+              <div className='vertical post-icons'></div>
               <img className='post-icons' src={Smiley} alt="profile-icon" />
               <img className='post-icons' src={At} alt="profile-icon" />
               <img className='post-icons' src={Font} alt="profile-icon" />

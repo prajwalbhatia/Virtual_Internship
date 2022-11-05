@@ -1,0 +1,11 @@
+.frame {
+  .children {
+    position: relative;
+    left: calc(var(--navigation-width) + 2 * var(--navigation-padding));
+    top: calc(var(--header-height) + (2 * 1.2rem ));
+    // margin-left: 2.6rem;
+    width: calc(100% - var(--navigation-width) - 2 * var(--navigation-padding) - 5.2rem);
+    // height: calc(100vh - (var(--header-height) + (2 * 1.2rem)) - 1.2rem);
+    overflow: auto;
+  }
+}
