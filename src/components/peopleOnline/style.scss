@@ -32,21 +32,6 @@
         margin-top: 0.8rem;
       }
 
-      // .tag-container {
-      //   display: flex;
-
-      //   .tag {
-      //     height: 1.4rem;
-      //     width: auto;
-      //     padding: 0.4rem 0.6rem;
-      //     border-radius: 0.4rem;
-      //     background: #E1F7FE;
-      //     font-size: 1rem;
-      //     color: #0354A6;
-      //     margin-right: 1rem;
-      //   }
-
-      // }
 
       .time {
         margin-right: 1rem;
@@ -74,6 +59,17 @@
           font-size: 1.4rem;
           color: #566A7F;
         }
+      }
+
+      .chatting-container
+      {
+        background: #5EADA8;
+        border-radius: 0.4rem;
+        padding: 0.5rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 3rem;
       }
     }
 
@@ -106,14 +102,6 @@
         border-radius: 1.2rem;
         margin-right: 1rem;
       }
-    }
-
-    .thoughts-container {
-      margin-top: 2rem;
-    }
-
-    .comments-container {
-      margin-top: 2rem;
     }
   }
 

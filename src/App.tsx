@@ -3,6 +3,7 @@ import './App.scss';
 import Navbar from './components/navbar/navbar';
 import Header from './components/header/header';
 import Posts from './components/posts/posts';
+import Community from './components/community/community';
 
 //ASSETS
 import Home from "./assets/home.svg";
@@ -79,8 +80,11 @@ function App() {
                     type="post"
 
       /> */}
-
+      {/* 
       <UserPost
+      /> */}
+
+      <Community
       />
       <div className="App">
 
