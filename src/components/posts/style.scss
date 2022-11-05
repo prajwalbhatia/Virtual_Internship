@@ -2,7 +2,7 @@
   height: auto;
   width: 100%;
   // margin: 10px;
-  background: #ffffff;
+  // background: #ffffff;
   border-radius: 0.8rem;
   display: flex;
   // padding: 2rem;
@@ -26,6 +26,7 @@
     margin-left: 1.6rem;
     border-radius: 8px;
     width: 100%;
+    display: flex;
 
     .text-area {
       textarea {

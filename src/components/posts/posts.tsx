@@ -1,4 +1,4 @@
-import React, { useState , useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 
 import { PostsProp, ICONS } from '../../constants';
 
@@ -16,7 +16,7 @@ import Mic from "../../assets/mic.svg";
 import At from "../../assets/at.svg";
 
 import { PrimaryButton } from "../button/button";
-//type - thoughts or post
+//type - thoughts or post or chat
 function Posts({ postText, btnAction, type }: PostsProp) {
   const [postTextVal, setPostTextVal] = useState('');
   const [textAreaFocus, setTextAreaFocus] = useState(false);
@@ -31,36 +31,57 @@ function Posts({ postText, btnAction, type }: PostsProp) {
   }
 
   useEffect(() => {
-      if(type === 'post')
-      {
-        setTextAreaFocus(true);
-      }
+    if (type === 'post' || type === 'chat') {
+      setTextAreaFocus(true);
+    }
   }, [])
-  
+
 
   return (
     <div
       className='posts'
-      style={type === 'post' ? { padding: '2rem' } : {}}
+      style={type === 'post' ? { padding: '2rem' , background : 'white' } : {}}
     >
       <div className='d-flex post-inner'>
-        <div className='dp-container'>
-          <div className='d-flex-c profile-container'>
-            <img src={Profile} alt="profile-icon" />
+        {
+          type !== 'chat'
+            ?
+            <div className='dp-container'>
+              <div className='d-flex-c profile-container'>
+                <img src={Profile} alt="profile-icon" />
+              </div>
+            </div>
+            :
+            null
+        }
+        <div className='post-input-container flex-col'>
+
+          <div className='d-flex'>
+            {
+              type === 'chat'
+                ?
+                <div className='dp-container  m-r-1'>
+                  <div className='d-flex-c profile-container'>
+                    <img src={Profile} alt="profile-icon" />
+                  </div>
+                </div>
+                :
+                null
+            }
+            <div className='width-100 text-area'>
+              <textarea
+                rows={textAreaFocus ? 4 : 1}
+                cols={50}
+                onChange={handlePostText}
+                placeholder={(type === 'thoughts' || type === 'chat') ? 'Share your thoughts...' : 'What’s on your mind?'}
+                value={postTextVal}
+                onFocus={() => { setTextAreaFocus(true) }}
+                onBlur={() => { setTextAreaFocus(false) }}
+              />
+            </div>
           </div>
-        </div>
-        <div className='post-input-container'>
-          <div className='text-area'>
-            <textarea
-              rows={textAreaFocus ? 4 : 1}
-              cols={50}
-              onChange={handlePostText}
-              placeholder={type === 'thoughts' ? 'Share your thoughts...' : 'What’s on your mind?'}
-              value={postTextVal}
-              onFocus={() => { setTextAreaFocus(true) }}
-              onBlur={() => { setTextAreaFocus(false) }}
-            />
-          </div>
+
+
           <div className={textAreaFocus ? 'action-btn-area' : 'action-btn-area d-none'}>
             <div className='left-part'>
               <div

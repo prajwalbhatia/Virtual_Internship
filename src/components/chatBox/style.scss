@@ -1,0 +1,96 @@
+.chat-box {
+  height: 100%;
+  width: 100%;
+  background: #F6F6F6;
+  border-radius: 0.8rem;
+  padding-top: 2rem;
+  overflow: auto;
+
+  .chat-header {
+    cursor: pointer;
+
+    .active {
+      background: #5EADA8;
+    }
+
+    .text {
+      font-size: 1.8rem;
+      color: #4A4A4A;
+    }
+
+    .text-active {
+      color: #5EADA8;
+    }
+  }
+
+  .user-message {
+    // margin: 0rem 0.4rem 0 2rem;
+    padding: 1rem;
+    
+    height: auto;
+    width: 100%;
+    border-radius: 0.8rem;
+    display: flex;
+    width: 100%;
+    // margin-top: 2rem;
+
+    .user-message-inner {
+      width: 100%;
+      margin-top: 2rem;
+
+      .post-user-detail-container {
+        display: flex;
+
+        .profile-container {
+          height: 4.3rem;
+          width: 4.6rem;
+          border-radius: 50%;
+          background: #C3C4FF;
+        }
+
+        .top {
+          display: flex;
+          align-items: center;
+        }
+
+        .user-info-container {
+          margin-left: 1rem;
+          background: #F6F6F6;
+          padding: 1rem;
+          width: 100%;
+          justify-content: space-between;
+
+          .username {
+            font-size: 1.4rem;
+            color: #4A4A4A;
+            margin-right: 1rem;
+            margin-left: 1rem;
+          }
+
+          .dot {
+            width: 0.5rem;
+            height: 0.5rem;
+            border-radius: 50%;
+            background: #566A7F;
+            margin-right: 1rem;
+          }
+
+          .desigination {
+            font-size: 1.4rem;
+            color: #566A7F;
+          }
+        }
+      }
+
+      .post-text-container {
+        font-size: 1.4rem;
+        color: #A1ACB8;
+        margin-top: 1rem;
+      }
+
+      .time {
+        color: #566A7F;
+      }
+    }
+  }
+}
