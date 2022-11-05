@@ -7,12 +7,8 @@ import '../../../src/index.scss';
 import './style.scss';
 
 //ASSETS
-import Bookmark from "../../assets/bookmark-post.svg";
 import UserDp from "../../assets/master.svg";
 import Flag from "../../assets/flag.svg";
-import Chat from "../../assets/comment.svg";
-import Posts from '../posts/posts';
-
 
 // { postText, btnAction }: PostsProp
 function Comment() {
@@ -57,18 +53,18 @@ function Comment() {
                   </div>
 
                 </div>
-                </div>
+              </div>
 
-                <div className='time-container'>
-                  <span className='time'>11h</span>
-                </div>
+              <div className='time-container'>
+                <span className='time'>11h</span>
               </div>
             </div>
-
           </div>
+
         </div>
       </div>
-      )
+    </div>
+  )
 }
 
-      export default Comment;
+export default Comment;

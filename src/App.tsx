@@ -1,46 +1,25 @@
 import React from 'react';
 import './App.scss';
 
-import Posts from './components/posts/posts';
-import Community from './components/community/community';
-import UserPost from './components/userPost/userPost';
-import Frame from './components/frame/frame';
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+} from 'react-router-dom';
 
-//ASSETS
-import Home from "./assets/home.svg";
-import BookOpen from "./assets/book-open.svg";
-import Hand from "./assets/hand-first.svg";
-import Briefcase from './assets/briefcase.svg';
-import { Item } from './constants';
+//PAGES
+import Dashboard from './pages/Dashboard/dashboard';
+import VideoCall from './pages/VideoCall/videoCall';
 
 function App() {
   return (
-    <>
-      <div className="App">
-        <Frame>
-          <div className='d-flex'>
-            <div className='left-part-page'>
-              <Posts
-                postText={() => {
+    <Router>
+      <Routes>
+        <Route path="/" element={<VideoCall />} />
+        <Route path="/video-call" element={<VideoCall />} />
+      </Routes>
 
-                }}
-                btnAction={() => {
-
-                }}
-                type="post"
-              />
-
-              <div className='your-highlight'>Your Highlights</div>
-              <UserPost />
-              
-            </div>
-            <div className='community-container'>
-            <Community />
-            </div>
-          </div>
-        </Frame>
-      </div>
-    </>
+    </Router>
   );
 }
 

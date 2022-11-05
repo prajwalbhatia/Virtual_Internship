@@ -1,0 +1,51 @@
+.video-call {
+  overflow: hidden;
+  display: flex;
+  padding: 2rem;
+
+  .topic-container {
+    margin-top: 1rem;
+
+    span {
+      font-size: 1.4rem;
+      color: #4A4A4A;
+      font-weight: 200;
+    }
+
+    .text-bold {
+      font-weight: 400;
+    }
+  }
+
+
+  .call {
+    display: flex;
+    flex: 4;
+    padding: 2rem;
+
+    display: 'flex';
+    flex-direction: column;
+
+    .calling {
+      .user-icon
+      {
+        border-radius: 0.8rem;
+      }
+
+      div {
+        justify-content: space-between;
+      }
+
+      margin-top: 2rem;
+    }
+  }
+
+  .chat-container {
+    padding: 2rem;
+    display: flex;
+    flex: 1;
+    height: 98vh;
+    overflow: scroll;
+
+  }
+}
