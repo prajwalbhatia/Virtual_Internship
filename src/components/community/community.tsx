@@ -49,12 +49,22 @@ function Posts({ }: any) {
 
         <div className='horizontal'></div>
         <div className='spaces-container'>
+          <div className='space-title'>Thought Bubbles</div>
           <Space />
+          <div className='horizontal'></div>
+          <Space />
+          <div className='horizontal'></div>
+          <Space />
+
         </div>
         <div className='horizontal'></div>
 
         <div className='people-onine-container'>
-          <PeopleOnline/>
+          <div className='people-title'>People Online</div>
+          <PeopleOnline />
+          <PeopleOnline />
+          <PeopleOnline />
+
         </div>
       </div>
     </div>

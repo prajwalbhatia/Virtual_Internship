@@ -9,7 +9,7 @@ import Master1 from "../../assets/master1.svg";
 import Master2 from "../../assets/master2.svg";
 import Master3 from "../../assets/master3.svg";
 
-import { PrimaryButton } from '../button/button';
+import { OutlinedPrimaryButton, PrimaryButton } from '../button/button';
 
 function Space() {
   return (
@@ -44,7 +44,7 @@ function Space() {
             btnContainerClass="m-r-1"
           />
 
-          <PrimaryButton
+          <OutlinedPrimaryButton
             name="View"
             click={() => { }}
           />

@@ -21,8 +21,8 @@ import Comment from '../comment/comment';
 function PeopleOnline() {
 
   return (
-    <div className='user-post'>
-      <div className='user-post-inner'>
+    <div className='people-online'>
+      <div className='people-online-inner'>
         <div className='d-flex-space-btw post-user-detail-container'>
           <div className='d-flex'>
             <div className='d-flex-c profile-container'>
