@@ -8,8 +8,8 @@
   }
 
   .children-no-nav {
-    left: calc(3rem + 2 * var(--navigation-padding));
-    width: calc(100% - 3rem - 2 * var(--navigation-padding) - 2.6rem);
+     left: calc(3rem);
+     width: calc(100% - 3rem - 2 * var(--navigation-padding));
   }
 }
 
@@ -24,8 +24,8 @@
     }
 
     .children {
-      width: calc(100% - 3rem - var(--navigation-padding));
-      left: calc(3rem + 2 * var(--navigation-padding));
+      left: calc(3rem);
+      width: calc(100% - 3rem - 2 * var(--navigation-padding));
 
     }
   }

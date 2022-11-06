@@ -110,5 +110,59 @@
   .user-post {
     height: auto;
     overflow: scroll;
+
+    .user-post-inner {
+      width: 100%;
+      padding: 2rem;
+
+      .post-user-detail-container {
+        display: flex;
+        // padding: 2rem;
+
+        .profile-container {
+          height: 4.3rem;
+          width: 4.6rem;
+          border-radius: 50%;
+          background: #C3C4FF;
+        }
+
+        .top,
+        .bottom {
+          display: flex;
+          align-items: center;
+        }
+
+        .bottom {
+          margin-top: 0.8rem;
+        }
+
+        .time {
+          margin-right: 1rem;
+        }
+
+        .user-info-container {
+          margin-left: 0;
+          margin-top: 1rem;
+
+          .top
+          {
+            align-items: flex-start;
+          }
+
+          .username
+          {
+            margin-left: 0;
+          }
+    
+
+          .dot {
+            display: none;
+          }
+
+        }
+      }
+
+
+    }
   }
 }
