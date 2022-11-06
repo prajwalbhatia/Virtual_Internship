@@ -57,14 +57,17 @@
 }
 
 .header-no-nav {
-  left: calc(3rem + 2 * var(--navigation-padding));
-  width: calc(100% - 3rem - 2 * var(--navigation-padding) - 2.6rem);
+  left: calc(3rem );
+  width: calc(100% - 3rem - 2 * var(--navigation-padding));
+
 }
 
 @media only screen and (max-width: 900px) {
-  .header , .header-no-nav {
-    left: calc(3rem + 2 * var(--navigation-padding));
-    width: calc(100% - 3rem - 2 * var(--navigation-padding) - 2.6rem);
+
+  .header,
+  .header-no-nav {
+    left: calc(3rem);
+    width: calc(100% - 3rem - 2 * var(--navigation-padding));
 
     .header-right-part {
       display: none;

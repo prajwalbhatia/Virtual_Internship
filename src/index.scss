@@ -139,3 +139,9 @@ body {
   }
 
 }
+
+@media only screen and (max-width: 900px) {
+  .flex-col-small {
+    flex-direction: column;
+  }
+}

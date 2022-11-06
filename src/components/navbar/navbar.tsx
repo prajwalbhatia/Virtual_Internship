@@ -19,7 +19,7 @@ function Navbar({ items, itemClicked, navToggler }: NavbarProps) {
 
   useEffect(() => {
     const resizing = (e: any) => {
-      if (e.target.outerWidth <= 1240) {
+      if (e.target.innerWidth <= 1240) {
         if (toggleNavBar) {
           setToggleNavBar(false);
           navToggler(false);
@@ -38,6 +38,16 @@ function Navbar({ items, itemClicked, navToggler }: NavbarProps) {
     }
   }, [])
 
+
+  useEffect(() => {
+    if (window.innerWidth < 900) {
+      setToggleNavBar(false)
+    }
+    else {
+      setToggleNavBar(true)
+    }
+  }, [])
+
   useEffect(() => {
     let updatedNavItemClicked: any = { ...navItemClick };
     items.forEach((item) => {
@@ -50,7 +60,6 @@ function Navbar({ items, itemClicked, navToggler }: NavbarProps) {
 
 
   const handleItemClick = (item: Item) => {
-    // debugger
     itemClicked(item);
     if (navItemClick.hasOwnProperty(item.id)) {
       let updatedNavItemClicked = { ...navItemClick };

@@ -9,6 +9,7 @@
   .comment-inner {
     width: 100%;
     margin-top: 2rem;
+
     .post-user-detail-container {
       display: flex;
 
@@ -88,6 +89,32 @@
 
     .thoughts-container {
       margin-top: 2rem;
+    }
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .comment {
+
+    .comment-inner {
+
+      .post-user-detail-container {
+        .user-info-container {
+          margin-left: 0;
+        }
+
+        .top {
+          flex-direction: column;
+
+          .username {
+            margin-left: 0;
+          }
+        }
+
+      }
+
+
+
     }
   }
 }

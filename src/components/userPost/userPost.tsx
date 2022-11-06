@@ -23,12 +23,12 @@ function UserPost() {
     <div className='user-post'>
       <div className='user-post-inner'>
         <div className='d-flex-space-btw post-user-detail-container'>
-          <div className='d-flex'>
+          <div className='d-flex flex-col-small'>
             <div className='d-flex-c profile-container'>
               <img src={UserDp} alt="user-icon" />
             </div>
             <div className='user-info-container'>
-              <div className='top'>
+              <div className='top flex-col-small'>
                 <div className='flag'>
                   <img src={Flag} alt="flag-icon" />
                 </div>

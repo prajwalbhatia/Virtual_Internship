@@ -16,7 +16,7 @@ function Comment() {
     <div className='comment'>
       <div className='comment-inner'>
         <div className='d-flex-space-btw post-user-detail-container'>
-          <div className='d-flex width-100'>
+          <div className='d-flex width-100 flex-col-small'>
             <div className='d-flex-c profile-container'>
               <img src={UserDp} alt="user-icon" />
             </div>

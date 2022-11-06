@@ -23,12 +23,16 @@
   .dashboard {
     .dashboard-inner {
       flex-direction: column;
+
+      .left-part-page {
+        margin-right: 0;
+      }
     }
 
     .community-container {
       height: 100%;
       margin-top: 2rem;
-      margin-right: 4rem;
+      margin-right: 0;
       margin-bottom: 2rem;
     }
   }
