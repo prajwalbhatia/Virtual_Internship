@@ -37,6 +37,14 @@
 
       margin-top: 2rem;
     }
+
+    .calling-btns
+    {
+      width: 100%;
+      display: flex;
+      margin-top: 2rem;
+      justify-content: space-between;
+    }
   }
 
   .chat-container {

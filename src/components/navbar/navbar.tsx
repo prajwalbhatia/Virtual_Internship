@@ -50,11 +50,12 @@ function Navbar({ items, itemClicked, navToggler }: NavbarProps) {
 
 
   const handleItemClick = (item: Item) => {
+    // debugger
     itemClicked(item);
     if (navItemClick.hasOwnProperty(item.id)) {
       let updatedNavItemClicked = { ...navItemClick };
       for (let key in updatedNavItemClicked) {
-        if (key === item.id.toString()) updatedNavItemClicked[key] = true
+        if (key === item.id.toString()) updatedNavItemClicked[key] = !updatedNavItemClicked[key]
         else updatedNavItemClicked[key] = false
       }
       setNavItemClick(updatedNavItemClicked);

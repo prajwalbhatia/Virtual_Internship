@@ -38,4 +38,15 @@
   .outline-primary-btn:hover {
     box-shadow: 0rem .3rem .6rem var(--boxShadow)
   }
+
+  .icon-button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 4rem;
+    width: 4rem;
+    background-color: #E8EEF2;
+    border-radius: .6rem;
+
+  }
 }
