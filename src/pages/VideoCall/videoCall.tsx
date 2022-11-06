@@ -23,13 +23,22 @@ function VideoCall() {
 
         <div className='calling'>
           <div className="d-flex-a-c">
-            <img src={Call1} alt="user-icon" />
-            <img src={Call2} alt="user-icon" />
+            <div className='d-flex flex-1 p-1'>
+              <img src={Call1} alt="user-icon" />
+            </div>
+            <div className='d-flex flex-1 p-1'>
+              <img src={Call2} alt="user-icon" />
+            </div>
           </div>
 
           <div className="d-flex-a-c">
-            <img src={Call3} alt="user-icon" />
-            <img src={Call4} alt="user-icon" />
+            <div className='d-flex flex-1 p-1'>
+              <img src={Call3} alt="user-icon" />
+            </div>
+
+            <div className='d-flex flex-1 p-1'>
+              <img src={Call4} alt="user-icon" />
+            </div>
           </div>
 
         </div>

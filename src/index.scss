@@ -74,9 +74,28 @@ body {
   justify-content: center;
 }
 
+.pos-rel
+{
+  position: relative;
+}
+
+.p-1
+{
+  padding: 1rem;
+}
+
 .d-flex-a-c {
   display: flex;
   align-items: center;
+}
+
+.d-none {
+  display: none;
+}
+
+.width-1
+{
+  width: 1rem !important;
 }
 
 .flex-1 {
