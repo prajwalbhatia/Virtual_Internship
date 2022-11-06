@@ -70,7 +70,7 @@ function Posts({ postText, btnAction, type }: PostsProp) {
             }
             <div className='width-100 text-area'>
               <textarea
-                rows={textAreaFocus ? 4 : 1}
+                rows={!textAreaFocus && type !== 'post' ? 1 : 4}
                 cols={50}
                 onChange={handlePostText}
                 placeholder={(type === 'thoughts' || type === 'chat') ? 'Share your thoughts...' : 'What’s on your mind?'}
@@ -82,7 +82,7 @@ function Posts({ postText, btnAction, type }: PostsProp) {
           </div>
 
 
-          <div className={textAreaFocus ? 'action-btn-area' : 'action-btn-area d-none'}>
+          <div className={!textAreaFocus && type !== 'post' ? 'action-btn-area d-none' : 'action-btn-area'}>
             <div className='left-part'>
               <div
                 onClick={() => buttonAction(ICONS.addIcon)}

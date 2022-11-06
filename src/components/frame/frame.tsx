@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 //CSS
 import '../../../src/index.scss';
@@ -19,9 +19,12 @@ import { Item } from '../../constants';
 
 
 function Frame({ children }: any) {
+  const [toggleNavBar, setToggleNavBar] = useState<any>(true);
+
   return (
     <div className='frame'>
       <Navbar
+        navToggler={(val: Boolean) => { setToggleNavBar(val) }}
         items={[
           {
             id: 1,
@@ -73,9 +76,11 @@ function Frame({ children }: any) {
           console.log(val)
         }}
         showSearch={true}
+        toggleNav={toggleNavBar}
       />
+      
 
-      <div className='children'>
+      <div className={toggleNavBar ? 'children' : 'children children-no-nav'}>
         {children}
       </div>
     </div>

@@ -1,11 +1,25 @@
 export interface NavbarProps {
   items: Item[];
-  itemClicked: Function
+  itemClicked: Function;
+  navToggler : Function
 }
 
 export interface HeaderProp {
   searchText: Function,
-  showSearch: boolean
+  showSearch: boolean,
+  toggleNav : boolean
+}
+
+export interface PeopleOnlineProp {
+  name : string,
+  flag : any,
+  desigination : string,
+  userImage : any
+}
+
+export interface SpaceProps {
+  tags : Tag[],
+  topic : string
 }
 
 export interface PostsProp {
@@ -19,6 +33,11 @@ export interface Item {
   icon: any,
   title: string,
   children: Children[],
+}
+
+export interface Tag {
+  id: number,
+  tag : string
 }
 
 export interface Children {

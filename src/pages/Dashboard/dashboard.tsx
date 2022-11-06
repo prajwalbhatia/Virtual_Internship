@@ -14,7 +14,7 @@ function Dashboard() {
   return (
     <div className='dashboard'>
       <Frame>
-        <div className='d-flex'>
+        <div className='d-flex dashboard-inner'>
           <div className='left-part-page'>
             <Posts
               postText={() => {

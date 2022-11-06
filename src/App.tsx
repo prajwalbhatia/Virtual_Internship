@@ -15,7 +15,7 @@ function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<VideoCall />} />
+        <Route path="/" element={<Dashboard />} />
         <Route path="/video-call" element={<VideoCall />} />
       </Routes>
 

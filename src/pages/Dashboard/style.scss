@@ -18,3 +18,18 @@
     overflow: auto;
   }
 }
+
+@media only screen and (max-width: 900px) {
+  .dashboard {
+    .dashboard-inner {
+      flex-direction: column;
+    }
+
+    .community-container {
+      height: 100%;
+      margin-top: 2rem;
+      margin-right: 4rem;
+      margin-bottom: 2rem;
+    }
+  }
+}

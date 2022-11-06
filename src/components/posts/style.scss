@@ -1,14 +1,11 @@
 .posts {
   height: auto;
   width: 100%;
-  // margin: 10px;
-  // background: #ffffff;
   border-radius: 0.8rem;
   display: flex;
-  // padding: 2rem;
+
   .post-inner {
     width: 100%;
-    // margin: 2rem;
   }
 
   .dp-container {
@@ -56,6 +53,20 @@
         .post-icons {
           margin-right: 1rem;
           cursor: pointer;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .posts {
+
+    .post-input-container {
+      .action-btn-area {
+        justify-content: flex-end;
+        .left-part {
+          display: none;
         }
       }
     }

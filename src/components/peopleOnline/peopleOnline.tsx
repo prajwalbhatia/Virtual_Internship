@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-import { PostsProp } from '../../constants';
+import { PeopleOnlineProp, PostsProp } from '../../constants';
 
 //CSS
 import '../../../src/index.scss';
@@ -18,7 +18,7 @@ import Posts from '../posts/posts';
 import Comment from '../comment/comment';
 
 // { postText, btnAction }: PostsProp
-function PeopleOnline() {
+function PeopleOnline({name , flag , desigination , userImage }: PeopleOnlineProp) {
 
   return (
     <div className='people-online'>
@@ -26,17 +26,17 @@ function PeopleOnline() {
         <div className='d-flex-space-btw post-user-detail-container'>
           <div className='d-flex'>
             <div className='d-flex-c profile-container'>
-              <img src={UserDp} alt="user-icon" />
+              <img src={userImage} alt="user-icon" />
             </div>
             <div className='user-info-container'>
               <div className='top'>
                 <div className='flag'>
-                  <img src={Flag} alt="flag-icon" />
+                  <img src={flag} alt="flag-icon" />
                 </div>
-                <span className='username'>Cantthinkof Aname</span>
+                <span className='username'>{name}</span>
               </div>
               <div className='bottom'>
-                <span className='desigination'>Intern at Virtual Internships</span>
+                <span className='desigination'>{desigination}</span>
               </div>
             </div>
           </div>

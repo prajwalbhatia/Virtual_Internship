@@ -10,6 +10,7 @@ import Call1 from "../../assets/call-1.svg";
 import Call2 from "../../assets/call-2.svg";
 import Call3 from "../../assets/call-3.svg";
 import Call4 from "../../assets/call-4.svg";
+import { PrimaryButton } from '../../components/button/button';
 
 
 function VideoCall() {
@@ -23,18 +24,53 @@ function VideoCall() {
 
         <div className='calling'>
           <div className="d-flex-a-c">
-            <img src={Call1} alt="user-icon" />
-            <img src={Call2} alt="user-icon" />
+            <div className='d-flex flex-1 p-1'>
+              <img src={Call1} alt="user-icon" />
+            </div>
+            <div className='d-flex flex-1 p-1'>
+              <img src={Call2} alt="user-icon" />
+            </div>
           </div>
 
           <div className="d-flex-a-c">
-            <img src={Call3} alt="user-icon" />
-            <img src={Call4} alt="user-icon" />
+            <div className='d-flex flex-1 p-1'>
+              <img src={Call3} alt="user-icon" />
+            </div>
+
+            <div className='d-flex flex-1 p-1'>
+              <img src={Call4} alt="user-icon" />
+            </div>
           </div>
 
         </div>
 
-        <div className='calling-btns'></div>
+        <div className='d-flex calling-btns'>
+          <div className='d-flex'>
+            <PrimaryButton
+              name="Unmute"
+              click={() => { }}
+              btnContainerClass="m-r-1"
+            />
+
+            <PrimaryButton
+              name="Stop Video"
+              click={() => { }}
+              btnContainerClass="m-r-1"
+            />
+
+            <PrimaryButton
+              name="Jump To Whiteboard"
+              click={() => { }}
+            />
+          </div>
+
+          <div className='d-flex'>
+            <PrimaryButton
+              name="Bye Bubble"
+              click={() => { }}
+            />
+          </div>
+        </div>
       </div>
 
       <div className='chat-container'>

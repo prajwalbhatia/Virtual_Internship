@@ -23,12 +23,11 @@
     flex: 4;
     padding: 2rem;
 
-    display: 'flex';
+    display: flex;
     flex-direction: column;
 
     .calling {
-      .user-icon
-      {
+      .user-icon {
         border-radius: 0.8rem;
       }
 
@@ -37,6 +36,14 @@
       }
 
       margin-top: 2rem;
+    }
+
+    .calling-btns
+    {
+      width: 100%;
+      display: flex;
+      margin-top: 2rem;
+      justify-content: space-between;
     }
   }
 
@@ -47,5 +54,19 @@
     height: 98vh;
     overflow: scroll;
 
+  }
+}
+
+@media only screen and (max-width: 1500px) {
+  .video-call {
+    .call {
+      flex: 2;
+    }
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .video-call {
+    flex-direction: column;
   }
 }

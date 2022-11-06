@@ -1,4 +1,5 @@
 import React from 'react';
+import { useNavigate } from "react-router-dom";
 
 //CSS
 import '../../../src/index.scss';
@@ -10,18 +11,26 @@ import Master2 from "../../assets/master2.svg";
 import Master3 from "../../assets/master3.svg";
 
 import { OutlinedPrimaryButton, PrimaryButton } from '../button/button';
+import { SpaceProps } from '../../constants';
 
-function Space() {
+function Space({ tags, topic }: SpaceProps) {
+  const navigate = useNavigate();
   return (
     <div className='space'>
       <div className='tag-container'>
-        <div className='tag'>UX</div>
-        <div className='tag'>Product Design</div>
+        {
+          tags.map((tag) => {
+            return (
+              <div key={tag.id} className='tag'>{tag.tag}</div>
+
+            )
+          })
+        }
       </div>
 
       <div className='topic-container'>
         <span className='text-bold'>Topic: </span>
-        <span>Subliminal messages in advertisement</span>
+        <span>{topic}</span>
       </div>
 
       <div className='member-onine-container'>
@@ -46,7 +55,7 @@ function Space() {
 
           <OutlinedPrimaryButton
             name="View"
-            click={() => { }}
+            click={() => { navigate('/video-call') }}
           />
         </div>
       </div>

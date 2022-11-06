@@ -9,6 +9,8 @@ import './style.scss';
 //ASSETS
 import Profile from "../../assets/profile.svg";
 import GroupName from "../../assets/group-name.svg";
+import UserDp from "../../assets/master.svg";
+import Flag from "../../assets/flag.svg";
 
 //COMONENTS
 import Space from "../space/space";
@@ -50,20 +52,77 @@ function Posts({ }: any) {
         <div className='horizontal'></div>
         <div className='spaces-container'>
           <div className='space-title'>Thought Bubbles</div>
-          <Space />
+          <Space
+            topic={'Subliminal messages in advertisement'}
+            tags={
+              [
+                {
+                  id: 1,
+                  tag: 'UX'
+                },
+                {
+                  id: 2,
+                  tag: 'Graphic Designing'
+                }
+              ]
+            }
+          />
           <div className='horizontal'></div>
-          <Space />
+          <Space
+            topic={'Subliminal messages in advertisement'}
+            tags={
+              [
+                {
+                  id: 1,
+                  tag: 'UX'
+                },
+                {
+                  id: 2,
+                  tag: 'Graphic Designing'
+                }
+              ]
+            }
+          />
           <div className='horizontal'></div>
-          <Space />
+          <Space
+            topic={'Subliminal messages in advertisement'}
+            tags={
+              [
+                {
+                  id: 1,
+                  tag: 'UX'
+                },
+                {
+                  id: 2,
+                  tag: 'Graphic Designing'
+                }
+              ]
+            }
+          />
 
         </div>
         <div className='horizontal'></div>
 
         <div className='people-onine-container'>
           <div className='people-title'>People Online</div>
-          <PeopleOnline />
-          <PeopleOnline />
-          <PeopleOnline />
+          <PeopleOnline
+            name={'Cantthinkof Aname'}
+            desigination={'Intern at Virtual Internships'}
+            flag={Flag}
+            userImage={UserDp}
+          />
+          <PeopleOnline
+            name={'Cantthinkof Aname'}
+            desigination={'Intern at Virtual Internships'}
+            flag={Flag}
+            userImage={UserDp}
+          />
+          <PeopleOnline
+            name={'Cantthinkof Aname'}
+            desigination={'Intern at Virtual Internships'}
+            flag={Flag}
+            userImage={UserDp}
+          />
 
         </div>
       </div>
